@@ -24,13 +24,13 @@ It has a few advantages over bundling it as files:
 <h2 align="center">Install</h2>
 
 ```
-npm install webpack-dev-middleware --save-dev
+npm install webpack-dev-middleware-hard-disk --save-dev
 ```
 
 <h2 align="center">Usage</h2>
 
 ``` javascript
-var webpackMiddleware = require("webpack-dev-middleware");
+var webpackMiddleware = require("webpack-dev-middleware-hard-disk");
 app.use(webpackMiddleware(...));
 ```
 
@@ -132,9 +132,9 @@ This part shows how you might interact with the middleware during runtime:
 
 In order to develop a server-side rendering application, we need access to the [`stats`](https://github.com/webpack/docs/wiki/node.js-api#stats), which is generated with the latest build.
 
-In the server-side rendering mode, __webpack-dev-middleware__ would sets the `stat` to `res.locals.webpackStats` before invoking the next middleware, where we can render pages and response to clients.
+In the server-side rendering mode, __webpack-dev-middleware-hard-disk__ would sets the `stat` to `res.locals.webpackStats` before invoking the next middleware, where we can render pages and response to clients.
 
-Notice that requests for bundle files would still be responded by __webpack-dev-middleware__ and all requests will be pending until the building process is finished in the server-side rendering mode.
+Notice that requests for bundle files would still be responded by __webpack-dev-middleware-hard-disk__ and all requests will be pending until the building process is finished in the server-side rendering mode.
 
 ```javascript
 app.use(webpackMiddleware(compiler, { serverSideRender: true })
@@ -194,20 +194,20 @@ Don't hesitate to create a pull request. Every contribution is appreciated. In d
 
 #### [MIT](./LICENSE)
 
-[npm]: https://img.shields.io/npm/v/webpack-dev-middleware.svg
-[npm-url]: https://npmjs.com/package/webpack-dev-middleware
+[npm]: https://img.shields.io/npm/v/webpack-dev-middleware-hard-disk.svg
+[npm-url]: https://npmjs.com/package/webpack-dev-middleware-hard-disk
 
-[node]: https://img.shields.io/node/v/webpack-dev-middleware.svg
+[node]: https://img.shields.io/node/v/webpack-dev-middleware-hard-disk.svg
 [node-url]: https://nodejs.org
 
-[deps]: https://david-dm.org/webpack/webpack-dev-middleware.svg
-[deps-url]: https://david-dm.org/webpack/webpack-dev-middleware
+[deps]: https://david-dm.org/webpack/webpack-dev-middleware-hard-disk.svg
+[deps-url]: https://david-dm.org/webpack/webpack-dev-middleware-hard-disk
 
-[tests]: http://img.shields.io/travis/webpack/webpack-dev-middleware.svg
-[tests-url]: https://travis-ci.org/webpack/webpack-dev-middleware
+[tests]: http://img.shields.io/travis/webpack/webpack-dev-middleware-hard-disk.svg
+[tests-url]: https://travis-ci.org/webpack/webpack-dev-middleware-hard-disk
 
-[cover]: https://codecov.io/gh/webpack/webpack-dev-middleware/branch/master/graph/badge.svg
-[cover-url]: https://codecov.io/gh/webpack/webpack-dev-middleware
+[cover]: https://codecov.io/gh/webpack/webpack-dev-middleware-hard-disk/branch/master/graph/badge.svg
+[cover-url]: https://codecov.io/gh/webpack/webpack-dev-middleware-hard-disk
 
 [chat]: https://badges.gitter.im/webpack/webpack.svg
 [chat-url]: https://gitter.im/webpack/webpack

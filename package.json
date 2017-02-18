@@ -1,13 +1,12 @@
 {
-  "name": "webpack-dev-middleware",
+  "name": "webpack-dev-middleware-hard-disk",
   "version": "1.10.0",
   "author": "Tobias Koppers @sokra",
-  "description": "Offers a dev middleware for webpack, which arguments a live bundle to a directory",
+  "description": "保存在硬盘中",
   "peerDependencies": {
     "webpack": "1 || ^2.1.0-beta || ^2.2.0-rc.0"
   },
   "dependencies": {
-    "memory-fs": "~0.4.1",
     "mime": "^1.3.4",
     "path-is-absolute": "^1.0.0",
     "range-parser": "^1.0.3"
